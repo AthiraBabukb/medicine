@@ -1,0 +1,278 @@
+
+
+/* Full-screen background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/user.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #333; /* Ensures readability against the background */
+  }
+
+  #user-details{
+    background-image: url("../image/user.png");
+    height: 100vh;
+    width: 190vh;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+  
+  /* Container for positioning */
+  .container {
+    display: flex;
+    align-items: flex-start; /* Aligns content to the top */
+    height: 100%;
+    padding: 20px; /* Adds some spacing */
+  }
+  
+  /* User information box */
+  .user-info {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  /* Title style */
+  .user-info h2 {
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 20px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+  }
+  
+  /* Paragraph style */
+  .user-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+  }
+
+  #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: #67cdf5;
+    box-shadow:0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    /* padding: 0 20px; */
+    padding: 0 15px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* Logout Button Styling */
+#navbar .logout-btn {
+    background-color: #e35656; /* Matches the navbar background */
+    color: black; /* Black text for better readability */
+    padding: 5px 20px; /* Reduced top/bottom padding for smaller height */
+    border-radius: 50px; /* Fully rounded edges */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: inline-block;
+    text-align: center;
+}
+
+#navbar .logout-btn:hover {
+    background-color: rgb(225, 61, 61); /* Invert background on hover */
+    color: #e4eeed; /* Matches the navbar color for text */
+    border: 2px solid #67cdf5; /* Add a border to match hover state */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    text-decoration: none;
+}
+
+
+.edit-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Edit form container styling */
+.edit-form {
+    margin-top: 20px; /* Adds spacing from user details */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Consistent spacing between inputs */
+}
+
+/* Labels for inputs */
+.edit-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Input fields */
+/* Input fields */
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form input[type="number"],
+.edit-form select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-form input:focus,
+.edit-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+    background-color: #fff;
+}
+
+/* Buttons for save and cancel */
+.edit-form .save-btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.edit-form .save-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.edit-form .cancel-btn {
+    padding: 12px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.edit-form .cancel-btn:hover {
+    background-color: #c82333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Button alignment */
+.edit-form .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Full-screen background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/user.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #333; /* Ensures readability against the background */
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adds a semi-transparent overlay for text readability */
+    z-index: -1;
+}
+
+
+/* Responsive adjustments for the form */
+@media (max-width: 768px) {
+    .edit-form {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .edit-form input,
+    .edit-form button {
+        font-size: 13px;
+    }
+}

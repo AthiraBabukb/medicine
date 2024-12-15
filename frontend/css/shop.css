@@ -1,0 +1,82 @@
+/* General styling for the Shop page */
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(212, 18, 18, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3eb3e6;
+}
+
+/* Styling for Add to Cart Button */
+#product1 .pro .add-to-cart-btn {
+    width: auto; /* Adjust width to fit the text */
+    padding: 10px 20px; /* Add padding for the button */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #3eb3e6; /* Blue background */
+    font-weight: 500; /* Slightly bold text */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: center; /* Center-align text */
+    font-size: 14px; /* Adjust font size */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#product1 .pro .add-to-cart-btn:hover {
+    background-color: #19adde; /* Change background on hover */
+    color: #ffffff; /* Ensure text color stays white */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}

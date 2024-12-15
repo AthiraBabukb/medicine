@@ -1,0 +1,91 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #8fd3f4, #84fab0, #8fd3f4); /* Blue on both sides with green in the middle */
+    color: #333;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logout-card {
+    background: #ffffff;
+    color: #444;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(132, 250, 176, 0.5); /* Soft green shadow */
+    padding: 25px 35px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.logout-card h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #5a9ea1; /* Muted blue-green for heading */
+}
+
+.logout-card p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 48%;
+}
+
+button.confirm {
+    background: #8fd3f4; /* Soft green for confirm button */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(132, 250, 176, 0.3); /* Slight shadow for button */
+}
+
+button.confirm:hover {
+    background: #6adca1; /* Darker green on hover */
+}
+
+button.cancel {
+    background: #8fd3f4; /* Soft blue for cancel button */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(143, 211, 244, 0.3); /* Blue shadow */
+}
+
+button.cancel:hover {
+    background: #6adca1; /* Darker blue on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

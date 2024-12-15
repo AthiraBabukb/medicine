@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan' , sans-serif;
+
+}
+
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body{
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #67cdf5;
+    box-shadow:0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* Logout Button Styling */
+#navbar .logout-btn {
+    background-color: #e35656; /* Matches the navbar background */
+    color: black; /* Black text for better readability */
+    padding: 5px 20px; /* Reduced top/bottom padding for smaller height */
+    border-radius: 50px; /* Fully rounded edges */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: inline-block;
+    text-align: center;
+}
+
+#navbar .logout-btn:hover {
+    background-color: rgb(225, 61, 61); /* Invert background on hover */
+    color: #e4eeed; /* Matches the navbar color for text */
+    border: 2px solid #67cdf5; /* Add a border to match hover state */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    text-decoration: none;
+}
+
+
+#hero{
+    background-image: url("../image/hero1.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h2{
+    padding-bottom: 15px;
+}
+
+#hero h3{
+    color: #3eb3e6;
+}
+
+#hero button {
+    background-color: #3eb3e6; 
+    color: #ffffff; /* Text color */
+    border: 0;
+    border-radius: 8px; /* Smooth rounded corners */
+    padding: 14px 80px 14px 65px; /* Size of button */
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    background-repeat: no-repeat;
+}
+
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(212, 18, 18, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgba(243,181,25);
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:#3eb3e6;
+}
+
+/* Styling for Add to Cart Button */
+#product1 .pro .add-to-cart-btn {
+    width: auto; /* Adjust width to fit the text */
+    padding: 10px 20px; /* Add padding for the button */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #3eb3e6; /* Blue background */
+    font-weight: 500; /* Slightly bold text */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: center; /* Center-align text */
+    font-size: 14px; /* Adjust font size */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#product1 .pro .add-to-cart-btn:hover {
+    background-color: #19adde; /* Change background on hover */
+    color: #ffffff; /* Ensure text color stays white */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+
+/* #product1 .pro .des .a .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #3eb3e6;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;  
+}
+
+a .cart:hover {
+    background-color: #19adde;  
+    color: #ffffff;              
+    transform: scale(1.1);       
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+} */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../image/banner/b2.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h2{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: rgb(102, 26, 243);
+}
+
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+    
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+
+footer .follow i{
+    margin-top: 20px;
+    padding-right: 4px;
+    cursor: pointer;
+
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+#page-header{
+    background-image: url("../image/shop/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#pagination{
+    text-align: center;
+
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+
+
+/* contact page */
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+
+#contact-details .details span,
+#form-details form{
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px; 
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* #contact-details .map{
+    width: 55px;
+    height: 400px;
+} */
+
+/* #contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+} */
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} 
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background-color: #54adf6;
+    color: #fff;
+}
+ 
+
+
+
+
+

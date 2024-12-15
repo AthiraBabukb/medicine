@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Shop - Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/sproduct.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="image/logo.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="user.html"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img id="MainImg" width="100%" alt="Product Image">
+        </div>
+        <div class="single-pro-details">
+            <h2 class="product-name"></h2>
+            <h2 class="product-price"></h2>
+            <input type="number" value="1" id="product-quantity">
+            <button class="normal" id="add-to-cart-btn">Add To Cart</button>
+
+            <h4>Product Details</h4>
+            <p class="composition"><strong>Composition:</strong></p>
+            <p class="consume_Type"><strong>Consume Type:</strong></p>
+            <p class="company_name"><strong>Manufacturer/Marketer:</strong></p>
+            <p class="return_policy"><strong>Return Policy:</strong></p>
+            <p class="stock"><strong>Stock:</strong></p>
+            <p id="user-id"><strong>User ID:</strong></p>
+        </div>
+    </section>
+  
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <script src="js/sproduct.js"></script>
+</body>
+</html>

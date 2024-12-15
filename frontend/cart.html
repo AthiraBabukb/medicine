@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Cart</h1>
+        </header>
+        <main>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-body">
+                    <!-- Cart items will be dynamically injected here -->
+                </tbody>
+            </table>
+            <div id="cart-footer">
+                <h3>Total: <span id="cart-total-price">₹ 0</span></h3>
+                <button id="buy-now">Buy Now</button>
+            </div>
+        </main>
+        <footer>
+            <p>Thank you for shopping with us!</p>
+        </footer>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>
